@@ -1,34 +1,31 @@
 {
   "implicitDependencies": {
     "angular.json": "*",
-    "package.json": {
-      "dependencies": "*",
-      "devDependencies": "*"
-    },
+    "package.json": { "dependencies": "*", "devDependencies": "*" },
     "tsconfig.base.json": "*",
     "tslint.json": "*",
     ".eslintrc.json": "*",
     "nx.json": "*"
   },
-  "affected": {
-    "defaultBase": "master"
-  },
+  "affected": { "defaultBase": "master" },
   "npmScope": "shopping-app",
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
-      "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
-      }
+      "options": { "cacheableOperations": ["build", "lint", "test", "e2e"] }
     }
   },
   "projects": {
-    "shopping-app": {
-      "tags": []
-    },
+    "shopping-app": { "tags": [] },
     "shopping-app-e2e": {
       "tags": [],
       "implicitDependencies": ["shopping-app"]
+    },
+    "shared-components": { "tags": [] },
+    "admin-shopping": { "tags": [] },
+    "admin-shopping-e2e": {
+      "tags": [],
+      "implicitDependencies": ["admin-shopping"]
     }
   }
 }

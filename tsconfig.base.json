@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@shopping-app/shared/components": ["libs/shared/components/src/index.ts"],
+      "@shopping-app/node_module/bootstrap": ["node_modules/bootstrap/scss/bootstrap"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
