@@ -41,6 +41,26 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "c3",
+              "rxjs",
+              "date-fns",
+              "rxjs-compat",
+              "chart.js",
+              "lodash",
+              "chartist",
+              "dom-plane",
+              "dom-set",
+              "crossvent",
+              "calendar-utils",
+              "angular-calendar",
+              "dom-autoscroller",
+              "@agm/core",
+              "@swimlane/ngx-charts",
+              "@mattlewis92/dom-autoscroller",
+              "angular-draggable-droppable",
+              "apexcharts"
+            ],
             "outputPath": "dist/apps/shopping-app",
             "index": "apps/shopping-app/src/index.html",
             "main": "apps/shopping-app/src/main.ts",
@@ -51,7 +71,22 @@
               "apps/shopping-app/src/favicon.ico",
               "apps/shopping-app/src/assets"
             ],
-            "styles": ["apps/shopping-app/src/styles.scss", "libs/shared/components/src/lib/assets/scss/style.scss"],
+            "styles": [
+              "apps/shopping-app/src/styles.scss",
+              "libs/shared/components/src/lib/assets/scss/style.scss",
+              "node_modules/chartist/dist/chartist.min.css",
+              "node_modules/flatpickr/dist/flatpickr.css",
+              "node_modules/c3/c3.min.css",
+              "node_modules/datatables.net-dt/css/jquery.dataTables.css",
+              "node_modules/ngx-toastr/toastr.css",
+              "node_modules/quill/dist/quill.snow.css",
+              "node_modules/quill/dist/quill.bubble.css",
+              "node_modules/angular-calendar/css/angular-calendar.css",
+              "node_modules/@swimlane/ngx-datatable/index.css",
+              "node_modules/@swimlane/ngx-datatable/themes/material.css",
+              "node_modules/@swimlane/ngx-datatable/assets/icons.css",
+              "libs/shared/components/src/lib/assets/vendor/css-chart.css"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -180,6 +215,26 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "c3",
+              "rxjs",
+              "date-fns",
+              "rxjs-compat",
+              "chart.js",
+              "lodash",
+              "chartist",
+              "dom-plane",
+              "dom-set",
+              "crossvent",
+              "calendar-utils",
+              "angular-calendar",
+              "dom-autoscroller",
+              "@agm/core",
+              "@swimlane/ngx-charts",
+              "@mattlewis92/dom-autoscroller",
+              "angular-draggable-droppable",
+              "apexcharts"
+            ],
             "outputPath": "dist/apps/admin-shopping",
             "index": "apps/admin-shopping/src/index.html",
             "main": "apps/admin-shopping/src/main.ts",
@@ -188,9 +243,29 @@
             "aot": true,
             "assets": [
               "apps/admin-shopping/src/favicon.ico",
-              "apps/admin-shopping/src/assets"
+              "apps/admin-shopping/src/assets",
+              {
+                "glob": "**/*",
+                "input": "libs/shared/components/src/lib/assets",
+                "output": "./assets/"
+              }
             ],
-            "styles": ["apps/admin-shopping/src/styles.scss", "libs/shared/components/src/lib/assets/scss/style.scss"],
+            "styles": [
+              "apps/shopping-app/src/styles.scss",
+              "libs/shared/components/src/lib/assets/scss/style.scss",
+              "node_modules/chartist/dist/chartist.min.css",
+              "node_modules/flatpickr/dist/flatpickr.css",
+              "node_modules/c3/c3.min.css",
+              "node_modules/datatables.net-dt/css/jquery.dataTables.css",
+              "node_modules/ngx-toastr/toastr.css",
+              "node_modules/quill/dist/quill.snow.css",
+              "node_modules/quill/dist/quill.bubble.css",
+              "node_modules/angular-calendar/css/angular-calendar.css",
+              "node_modules/@swimlane/ngx-datatable/index.css",
+              "node_modules/@swimlane/ngx-datatable/themes/material.css",
+              "node_modules/@swimlane/ngx-datatable/assets/icons.css",
+              "libs/shared/components/src/lib/assets/vendor/css-chart.css"
+            ],
             "scripts": []
           },
           "configurations": {
