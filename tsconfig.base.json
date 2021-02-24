@@ -8,14 +8,14 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "es2015",
+    "target": "ES6",
     "module": "esnext",
     "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@shopping-app/shared/components": ["libs/shared/components/src/index.ts"],
+      "@shopping-app/components": ["libs/shared/components/src/index.ts"],
       "@shopping-app/node_module/bootstrap": ["node_modules/bootstrap/scss/bootstrap"]
     }
   },

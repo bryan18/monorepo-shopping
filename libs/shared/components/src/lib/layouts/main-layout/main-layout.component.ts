@@ -1,8 +1,13 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+// Angular core
+import { Component, HostListener, OnInit } from '@angular/core';
+// Angular route
 import { Router } from '@angular/router';
+// Angular scrollbar
+import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
+
+
 declare var $: any;
 
-import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
 
 @Component({
   selector: 'shopping-app-main-layout',
